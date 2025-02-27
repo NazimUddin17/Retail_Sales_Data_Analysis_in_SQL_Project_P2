@@ -1,7 +1,7 @@
 # Retail Sales Data Analysis SQL Project
 
 ## Project Overview
-
+  
 **Project Title**: Retail Sales Data Analysis  
 **Level**: Beginner  
 **Database**: `retail_db`
