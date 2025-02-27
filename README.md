@@ -26,7 +26,7 @@ This project is designed to demonstrate SQL skills and techniques typically used
 DROP DATABASE IF EXISTS retail_db;
 CREATE DATABASE retail_db;
 
-USE DATABASE retail_db;
+USE retail_db;
 
 DROP TABLE IF EXISTS retail_sales;
 
@@ -83,11 +83,11 @@ WHERE
 
 -- Fixing data type
 ALTER TABLE retail_sales
-MODIFY COLUMN sale_date DATE,
-MODIFY COLUMN sale_time TIME,
-MODIFY COLUMN price_per_unit FLOAT,
-MODIFY COLUMN cogs FLOAT,
-MODIFY COLUMN total_sale FLOAT;
+   MODIFY COLUMN sale_date DATE,
+   MODIFY COLUMN sale_time TIME,
+   MODIFY COLUMN price_per_unit FLOAT,
+   MODIFY COLUMN cogs FLOAT,
+   MODIFY COLUMN total_sale FLOAT;
 
 -- Check for duplicate values
 SELECT transactions_id, COUNT(transactions_id) FROM retail_sales
@@ -136,7 +136,7 @@ WHERE category = 'Beauty';
 5. **Write a SQL query to find all transactions where the total_sale is greater than 1000.**:
 ```sql
 SELECT * FROM retail_sales
-WHERE total_sale > 1000
+WHERE total_sale > 1000;
 ```
 
 6. **Write a SQL query to find the total number of transactions (transactions_id) made by each gender in each category.**:
